@@ -10,8 +10,8 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 500px;
+  height: 300px;
 }
 
 .image_item {
@@ -24,8 +24,16 @@ img {
   padding: 0;
 }
 
+#counter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #validation-input {
   border: 3px solid #bdbdbd;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #validation-input.valid {
