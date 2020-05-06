@@ -11,13 +11,12 @@ const ingredients = [
 
 const ourIngredients = document.querySelector("ul#ingredients");
 
-const createLI = ingredients
-  .map(
-    (ingredient) =>
-      (document.createElement("li").textContent = `<li>${ingredient}</li>`)
-  )
-  .join("");
+const createLI = ingredients.map((ingredient) => {
+  const li = document.createElement("li");
+  li.textContent = ingredient;
+  li.classList.add("js-item");
 
-const total = ourIngredients.insertAdjacentHTML("afterbegin", createLI);
+  return li;
+});
 
-console.log(ourIngredients);
+ourIngredients.append(...createLI);

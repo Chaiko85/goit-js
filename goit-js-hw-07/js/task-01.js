@@ -1,6 +1,6 @@
 "use strict";
 
-const items = document.querySelectorAll(".item");
+const items = [...document.querySelectorAll(".item")];
 console.log(`В списке ${items.length} категории`);
 
 items.forEach((item) => {
