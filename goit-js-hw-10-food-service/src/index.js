@@ -11,12 +11,12 @@ const Theme = {
 
 const switchTheme = () => {
   const body = document.querySelector('body');
-  if (body.classList.value === Theme.LIGHT) {
-    body.classList.remove(Theme.LIGHT);
-    body.classList.add(Theme.DARK);
-  } else {
+  if (body.classList.value === Theme.DARK) {
     body.classList.remove(Theme.DARK);
     body.classList.add(Theme.LIGHT);
+  } else {
+    body.classList.remove(Theme.LIGHT);
+    body.classList.add(Theme.DARK);
   }
 };
 
