@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background: #000000;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding-top: 100px;
+}
+
+
+#timer-1 {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+#timer-1>div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #FF4500;
+  display: inline-block;
+}
+
+#timer-1 div>span {
+  padding: 10px;
+  background: #000000;
+  display: block;
+}
+
+.label {
+  padding-top: 5px;
+  font-size: 16px;
+}
